@@ -37,7 +37,3 @@ const Jumbotron = () => {
 }
 
 export default Jumbotron;
-
-const trasitionStyle = {
-    margin: "0"
-}

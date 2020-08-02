@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ImageSlider from './ImageSlider';
 import Jumbotron from './Jumbotron';
 import Welcome from './Welcome';

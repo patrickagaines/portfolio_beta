@@ -16,16 +16,16 @@ const ImageSlider = () => {
                 </ul>
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img src={Portrait}/>
-                        <div className="carousel-caption">
+                        <img src={Portrait} alt="Developer Logo"/>
+                        <div className="carousel-caption" data-interval="5000">
                             <h1 className="display-2">Developer</h1>
                         </div>
                     </div>
-                    <div className="carousel-item">
-                        <img src={ReactLogo}/>
+                    <div className="carousel-item" data-interval="3000">
+                        <img src={ReactLogo} alt="React Logo"/>
                     </div>
-                    <div className="carousel-item">
-                        <img src={ReactRouterLogo}/>
+                    <div className="carousel-item" data-interval="3000">
+                        <img src={ReactRouterLogo} alt="React-Router Logo"/>
                     </div>
                 </div>
             </div>
