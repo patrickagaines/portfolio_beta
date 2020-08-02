@@ -4,7 +4,7 @@ import placeholder from '../images/placeholder.png';
 const Showcase = () => {
 
     return(
-        <div className="container-fluid">
+        <div className="container-fluid showcase">
             <div className="row padding">
                 <div className="col-md-4">
                     <div className="card">

@@ -4,7 +4,7 @@ export const MyContext = createContext();
 
 export const ContextProvider = (props) => {
     const[route, setRoute] = useState([
-        {home: true},
+        {home: false},
         {about: false},
         {projects: false}
     ]);

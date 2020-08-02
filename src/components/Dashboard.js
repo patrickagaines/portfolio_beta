@@ -1,7 +1,7 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Navbar from './Navbar';
-import Footer from './Footer';
 import Home from './Home';
 import About from './About';
 import Projects from './Projects';
@@ -11,10 +11,17 @@ const Dashboard = () => {
     return(
         <div className="container-fluid page dashboard">
             <Navbar />
-            <Route exact path="/dashboard" render={Home} />
-            <Route exact path="/dashboard/about" render={About} />
-            <Route exact path="/dashboard/projects" render={Projects} />
-            <Footer />
+                <Route render={({location}) =>(
+                    <TransitionGroup>
+                        <CSSTransition key={location.key} timeout={950} classNames="fade">
+                            <Switch location={location}>
+                                <Route exact path="/" component={Home} />
+                                <Route path="/About" component={About} />
+                                <Route path="/Projects" component={Projects} />
+                            </Switch>
+                        </CSSTransition>
+                    </TransitionGroup>
+                )} />
         </div>
     )
 }
