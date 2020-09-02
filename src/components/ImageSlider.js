@@ -1,34 +1,30 @@
 import React from 'react';
+import Carousel from 'react-bootstrap/Carousel';
 import Portrait from '../images/portrait.png';
 import ReactLogo from '../images/react.png';
 import ReactRouterLogo from '../images/react-router.png';
 
-
 const ImageSlider = () => {
-    
+    const fontStyle = {
+        fontFamily: "Bookman, Arial, Helvetica, sans-serif"
+    }
+
     return(
         <div className="container-fluid image-slider">
-            <div id="slides" className="carousel slide" data-ride="carousel">
-                <ul className="carousel-indicators">
-                    <li data-target="#slides" data-slide-to="0" className="active"></li>
-                    <li data-target="#slides" data-slide-to="1"></li>
-                    <li data-target="#slides" data-slide-to="2"></li>
-                </ul>
-                <div className="carousel-inner">
-                    <div className="carousel-item active">
-                        <img src={Portrait} alt="Developer Logo"/>
-                        <div className="carousel-caption" data-interval="5000">
-                            <h1 className="display-2">Developer</h1>
-                        </div>
-                    </div>
-                    <div className="carousel-item" data-interval="3000">
-                        <img src={ReactLogo} alt="React Logo"/>
-                    </div>
-                    <div className="carousel-item" data-interval="3000">
-                        <img src={ReactRouterLogo} alt="React-Router Logo"/>
-                    </div>
-                </div>
-            </div>
+            <Carousel interval={4500} pause='hover'>
+                <Carousel.Item>
+                    <img className="d-block w-100" src={Portrait} alt="Developer Logo" />
+                    <Carousel.Caption className="carousel-caption">
+                        <h1 style={fontStyle}>Developer</h1>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img className="d-block w-100" src={ReactLogo} alt="Developer Logo" />
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img className="d-block w-100" src={ReactRouterLogo} alt="Developer Logo" />
+                </Carousel.Item>
+            </Carousel>
         </div>
     )
 }

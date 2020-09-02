@@ -8,7 +8,7 @@ const Footer = () => {
                 <div className="row text-center">
                     <div className="col-12">
                         <hr className="light-100"/>
-                        <h5>Contact Info</h5>
+                        <h5>Connect</h5>
                         <hr className="light-100"/>
                     </div>
                     <div className="col-4">

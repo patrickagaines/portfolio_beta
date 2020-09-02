@@ -1,5 +1,6 @@
 import React, { useEffect, useContext } from 'react';
 import { MyContext } from '../context/MyContext.js';
+import ProjectBanner from './ProjectBanner';
 import Showcase from './Showcase';
 import Footer from './Footer';
 
@@ -16,6 +17,7 @@ const Projects = () => {
 
     return(
         <div className="container-fluid dashboard-body">
+            <ProjectBanner />
             <Showcase />
             <Footer />
         </div>

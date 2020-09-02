@@ -1,12 +1,15 @@
 import React from 'react';
 
 const Welcome = () => {
+    const fontStyle = {
+        fontFamily: "Impact, Arial, Helvetica, sans-serif"
+    }
 
     return(
         <div className="container-fluid welcome-container">
             <div className="row welcome text-center">
                 <div className="col-12">
-                    <h1 className="display-4">Built with ease.</h1>
+                    <h1 className="display-4" style={fontStyle}>Built with ease.</h1>
                 </div>
                 <hr className="welcome-hr"/>
                 <div className="col-12 welcome-content">
