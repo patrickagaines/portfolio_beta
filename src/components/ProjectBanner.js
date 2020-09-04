@@ -7,7 +7,7 @@ const ProjectBanner = () => {
                 <div className="col-12">
                     <h1>My Latest Work</h1>
                 </div>
-                <hr/>
+                {/* <hr/> */}
             </div>
         </div>
     )

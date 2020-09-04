@@ -3,6 +3,9 @@ import Carousel from 'react-bootstrap/Carousel';
 import Portrait from '../images/portrait.png';
 import ReactLogo from '../images/react.png';
 import ReactRouterLogo from '../images/react-router.png';
+import ComputerImage from '../images/computerimage.png';
+import CPU from '../images/CPU182.png';
+import CPU2 from '../images/laptopfinal.png';
 
 const ImageSlider = () => {
     const fontStyle = {
@@ -19,10 +22,10 @@ const ImageSlider = () => {
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img className="d-block w-100" src={ReactLogo} alt="Developer Logo" />
+                    <img className="d-block w-100" src={CPU} alt="Developer Logo" />
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img className="d-block w-100" src={ReactRouterLogo} alt="Developer Logo" />
+                    <img className="d-block w-100" src={CPU2} alt="Developer Logo" />
                 </Carousel.Item>
             </Carousel>
         </div>

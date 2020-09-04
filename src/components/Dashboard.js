@@ -5,6 +5,7 @@ import Navbar from './Navbar';
 import Home from './Home';
 import About from './About';
 import Projects from './Projects';
+import RelayForJustice from './RelayForJustice';
 
 const Dashboard = () => {
 
@@ -18,6 +19,7 @@ const Dashboard = () => {
                                 <Route exact path="/" component={Home} />
                                 <Route path="/About" component={About} />
                                 <Route path="/Projects" component={Projects} />
+                                <Route path="/relayforjustice" component={RelayForJustice} />
                             </Switch>
                         </CSSTransition>
                     </TransitionGroup>
