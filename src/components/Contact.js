@@ -3,11 +3,7 @@ import { MyContext } from '../context/MyContext';
 
 const Contact = () => {
 
-    const { contact, setContact } = useContext(MyContext);
-
-    const toggleContact = () => {
-        setContact(!contact);
-    }
+    const { toggleContact } = useContext(MyContext);
 
     return(
         <div className="dialog-background text-center">

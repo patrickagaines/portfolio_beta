@@ -11,8 +11,13 @@ export const ContextProvider = (props) => {
 
     const[contact, setContact] = useState(false);
 
+    const toggleContact = () => {
+        setContact(!contact);
+
+    }
+
     return(
-        <MyContext.Provider value={{page, setPage, contact, setContact}}>
+        <MyContext.Provider value={{page, setPage, contact, setContact, toggleContact}}>
             {props.children}
         </MyContext.Provider>
     );

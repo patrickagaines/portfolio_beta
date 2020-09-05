@@ -3,12 +3,7 @@ import { MyContext } from '../context/MyContext.js';
 
 const Footer = () => {
 
-    const{contact, setContact} = useContext(MyContext);
-
-    const toggleContact = () => {
-        setContact(!contact);
-
-    }
+    const{ toggleContact } = useContext(MyContext);
 
     return(
             <footer className="footer">
@@ -23,7 +18,7 @@ const Footer = () => {
                             <a href="https://www.linkedin.com/in/patrick-gaines-1420b31b0/"><i className="fab fa-linkedin" aria-hidden="true"></i></a>
                         </div>
                         <div className="col-4">
-                            <p className="footer-icon" onClick={toggleContact}><i className="fa fa-envelope-square" aria-hidden="true"></i></p>
+                            <button className="footer-icon btn"><i className="fa fa-envelope-square" aria-hidden="true"></i></button>
                         </div>
                         <div className="col-4">
                             <a href="https://github.com/PatrickAGaines"><i className="fab fa-github" aria-hidden="true"></i></a>
