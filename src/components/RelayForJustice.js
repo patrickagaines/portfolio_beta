@@ -5,14 +5,14 @@ import Footer from './Footer';
 import RelayLogo from '../images/Relayforjustice.png';
 
 const RelayForJustice = () => {
-    const[page, setPage] = useContext(MyContext);
+    const{page, setPage} = useContext(MyContext);
 
     useEffect(() =>{
-        setPage([
-            {home: false},
-            {about: false},
-            {projects: true}
-        ]);
+        setPage({
+            home: false,
+            about: false,
+            projects: true
+        });
     }, []);
 
     return(
@@ -20,7 +20,7 @@ const RelayForJustice = () => {
             <div className="container-fluid relay-for-justice">
                 <div className="row">
                     <div className="col-12 text-left back-btn-div">
-                        <NavLink to="/projects" className="back-btn"><i class="fas fa-undo"></i> Back to Projects</NavLink>
+                        <NavLink to="/projects" className="back-btn"><i className="fas fa-undo"></i> Back to Projects</NavLink>
                     </div>
                 </div>
                 <div className="row text-center relay-banner">

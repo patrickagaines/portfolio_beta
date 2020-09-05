@@ -5,14 +5,14 @@ import Showcase from './Showcase';
 import Footer from './Footer';
 
 const Projects = () => {
-    const[page, setPage] = useContext(MyContext);
+    const{age, setPage} = useContext(MyContext);
 
     useEffect(() =>{
-        setPage([
-            {home: false},
-            {about: false},
-            {projects: true}
-        ]);
+        setPage({
+            home: false,
+            about: false,
+            projects: true
+        });
     }, []);
 
     return(

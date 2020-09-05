@@ -25,7 +25,7 @@ const Showcase = () => {
                         <div className="card-body">
                             <h4 className="card-title">Ecommerce App</h4>
                             <p className="card-text">Description of my Ecommerce App.</p>
-                            <a href="#" className="btn btn-outline-secondary">See Profile</a>
+                            <button className="card-button btn">See Profile</button>
                         </div>
                     </div>
                 </div>
@@ -36,7 +36,7 @@ const Showcase = () => {
                         <div className="card-body">
                             <h4 className="card-title">Game App</h4>
                             <p className="card-text">Description of my Game App.</p>
-                            <a href="#" className="btn btn-outline-secondary">See Profile</a>
+                            <button className="card-button btn">See Profile</button>
                         </div>
                     </div>
                 </div>

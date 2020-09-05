@@ -3,19 +3,19 @@ import { MyContext } from '../context/MyContext.js';
 import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
-    const[page, setPage] = useContext(MyContext);
+    const{page, setPage} = useContext(MyContext);
 
     const homeStyle = {
-        fontWeight: page[0].home ? "bold" : "normal"
+        fontWeight: page.home ? "bold" : "normal"
     }
 
     const aboutStyle = {
-        fontWeight: page[1].about ? "bold" : "normal",
+        fontWeight: page.about ? "bold" : "normal",
         color: "#333"
     }
     
     const projectsStyle = {
-        fontWeight: page[2].projects ? "bold" : "normal",
+        fontWeight: page.projects ? "bold" : "normal",
         color: "#333"
     }
 

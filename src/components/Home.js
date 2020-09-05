@@ -6,14 +6,14 @@ import Welcome from './Welcome';
 import Footer from './Footer';
 
 const Home = () => {
-    const[page, setPage] = useContext(MyContext);
+    const{page, setPage} = useContext(MyContext);
 
     useEffect(() =>{
-        setPage([
-            {home: true},
-            {about: false},
-            {projects: false}
-        ]);
+        setPage({
+            home: true,
+            about: false,
+            projects: false
+        });
     }, []);
 
     return(
