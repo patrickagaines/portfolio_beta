@@ -5,7 +5,7 @@ import Showcase from './Showcase';
 import Footer from './Footer';
 
 const Projects = () => {
-    const{age, setPage} = useContext(MyContext);
+    const{page, setPage} = useContext(MyContext);
 
     useEffect(() =>{
         setPage({

@@ -1,4 +1,5 @@
 import React, { Fragment, useContext } from 'react';
+import { MyContext } from '../context/MyContext';
 import { Switch, Route } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Navbar from './Navbar';
@@ -7,7 +8,7 @@ import About from './About';
 import Projects from './Projects';
 import Contact from './Contact';
 import RelayForJustice from './RelayForJustice';
-import { MyContext } from '../context/MyContext';
+
 
 const Dashboard = () => {
 

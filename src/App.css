@@ -53,6 +53,13 @@ body {
     padding-bottom: 2rem;
 }
 
+
+/* Navbar */
+.navbar {
+    z-index: 1000;
+}
+
+
 /* Image Slider */
 .image-slider {
     background-color: #12475f;
@@ -109,17 +116,6 @@ body {
     padding-bottom: 1rem;
 }
 
-.fa-code {
-    color: #e54d26;
-}
-
-.fa-bold {
-    color: #563d73;
-}
-
-.fa-css3 {
-    color: #2163af;
-}
 
 .fa-react, .fa-aws, .fa-python {
     font-size: 4em;
@@ -136,6 +132,10 @@ body {
     width: 75%;
     margin: 0 auto;
     padding-top: 2rem;
+}
+
+.welcome-header {
+    font-size: 350%;
 }
 
 .welcome hr {
@@ -172,7 +172,6 @@ body {
 .card {
     margin: .5em;
     background-color: #333;
-    border: 5px solid #333;
 }
 
 .card-button {
@@ -229,11 +228,44 @@ body {
 /* Message Dialog */
 .dialog-background {
     position: fixed;
-    z-index: 2000;
     height: 100vh;
     width: 100%;
-    background-color: black;
-    opacity: .6;
+    z-index: 1500;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.dialog-box {
+    max-width: 600px;
+    margin: auto;
+    background-color: white;
+    color: black;
+    padding: 2rem;
+}
+
+.dialog-button-cancel {
+    margin: .3rem;
+    color: black;
+    background-color: white;
+    border: 1px solid #222122;
+}
+
+.dialog-button-cancel:hover {
+    color: white;
+    background-color: #222122;
+    border: 1px solid #222122;
+}
+
+.dialog-button-submit {
+    margin: .3rem;
+    background-color: #333;
+    border: 1px solid #333;
+}
+
+.dialog-button-submit:hover {
+    background-color: #222122;
+    border: 1px solid #222122;
 }
 
 
@@ -251,6 +283,11 @@ body {
 .footer-icon {
     font-size: 3em;
     padding: 0;
+}
+
+.footer-icon:focus {
+    outline: none;
+    box-shadow: none;
 }
 
 .fa-github {
@@ -370,6 +407,14 @@ body {
         font-size: 500%;
     }
 
+    .welcome-header {
+        font-size: 350%;
+    }
+
+    .footer-icon {
+        font-size: 2.6em;
+    }
+
     .footer a {
         font-size: 2.6em;
     }
@@ -390,19 +435,12 @@ body {
         font-size: 95%;
     }
     
-    /* .carousel-caption h3 {
-        font-size: 140%;
-        font-weight: 400;
-        padding-bottom: .2rem;
+    .welcome-header {
+        font-size: 300%;
     }
 
-    .carousel-caption .btn {
-        font-size: 95%;
-        padding: 8px 14px;
-    } */
-
-    .display-4 {
-        font-size: 200%;
+    .footer-icon {
+        font-size: 2.4em;
     }
 
     .footer a {
@@ -455,8 +493,16 @@ body {
         display: none;
     }
 
-    .display-4 {
-        font-size: 160%;
+    .jumbotron .btn {
+        padding: .6rem 3rem;
+    }
+
+    .tech-header {
+        font-size: 125%;
+    }
+
+    .welcome-header {
+        font-size: 225%;
     }
 
     .relay-banner {
@@ -465,6 +511,10 @@ body {
 
     .lead {
         font-size: 100%;
+    }
+
+    .footer-icon {
+        font-size: 2.2em;
     }
 
     .footer a {

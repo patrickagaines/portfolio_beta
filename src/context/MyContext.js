@@ -10,7 +10,7 @@ export const ContextProvider = (props) => {
     });
 
     const[contact, setContact] = useState(false);
-
+    
     const toggleContact = () => {
         setContact(!contact);
 

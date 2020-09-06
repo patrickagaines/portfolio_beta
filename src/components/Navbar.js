@@ -3,7 +3,7 @@ import { MyContext } from '../context/MyContext.js';
 import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
-    const{page, setPage} = useContext(MyContext);
+    const{ page } = useContext(MyContext);
 
     const homeStyle = {
         fontWeight: page.home ? "bold" : "normal"
@@ -22,7 +22,7 @@ const Navbar = () => {
     return(
         <nav className="navbar navbar-expand-md navbar-light bg-light sticky-top">
             <div className="container">
-                <a href="#"><i className="fa fa-cog" aria-hidden="true"></i></a>
+                <div><i className="fa fa-cog" aria-hidden="true"></i></div>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
                     <span className="navbar-toggler-icon"></span>
                 </button>

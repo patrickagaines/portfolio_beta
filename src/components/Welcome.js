@@ -9,7 +9,7 @@ const Welcome = () => {
         <div className="container-fluid welcome-container">
             <div className="row welcome text-center">
                 <div className="col-12">
-                    <h1 className="display-4" style={fontStyle}>Built with care.</h1>
+                    <h2 className="welcome-header" style={fontStyle}>Built with care.</h2>
                 </div>
                 <hr className="welcome-hr"/>
                 <div className="col-12 welcome-content">
