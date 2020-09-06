@@ -6,7 +6,7 @@ import Welcome from './Welcome';
 import Footer from './Footer';
 
 const Home = () => {
-    const{page, setPage} = useContext(MyContext);
+    const{ setPage } = useContext(MyContext);
 
     useEffect(() =>{
         setPage({
@@ -14,7 +14,7 @@ const Home = () => {
             about: false,
             projects: false
         });
-    }, []);
+    }, [setPage]);
 
     return(
         <div className="container-fluid dashboard-body">

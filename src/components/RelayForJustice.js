@@ -5,7 +5,7 @@ import Footer from './Footer';
 import RelayLogo from '../images/Relayforjustice.png';
 
 const RelayForJustice = () => {
-    const{page, setPage} = useContext(MyContext);
+    const { setPage } = useContext(MyContext);
 
     useEffect(() =>{
         setPage({
@@ -13,7 +13,7 @@ const RelayForJustice = () => {
             about: false,
             projects: true
         });
-    }, []);
+    }, [setPage]);
 
     return(
         <div className="container-fluid dashboard-body">
