@@ -150,6 +150,84 @@ body {
 }
 
 
+/* About Me */
+.about-me {
+    background-color: #12475f;
+    /* padding: 2rem; */
+}
+
+.about-greeting {
+    font-size: 250%;
+}
+
+.greeting-bottom {
+    margin-bottom: 4rem;
+}
+
+.about-section {
+    text-align: left;
+    padding: 2rem;
+}
+
+.about-text {
+    padding: 4rem;
+}
+
+.collage-container {
+    padding: 0;
+}
+
+.about-text-realestate {
+    position: absolute;
+    text-shadow: 2px 1px 2px #000;
+    margin-top: 6rem;
+    padding: 2rem;
+    z-index: 500;
+}
+
+.cc-container {
+    padding: 3rem;
+}
+
+.complete-picture {
+    border: 30px solid #f8f9fa;
+}
+
+
+/*--- Fixed Background Image --*/
+.figure {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    margin: 0!important;
+}
+
+.fixed-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#fixed {
+    background-image: url('./images/tintedchicagoshoreline.jpg');
+    position: fixed;
+    display: block;
+    margin: auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    will-change: transform;
+}
+
+
 /* Project Banner */
 .project-banner {
     background-color: #12475f;
@@ -411,6 +489,10 @@ body {
         font-size: 350%;
     }
 
+    .about-text-realestate {
+        margin-top: 1.8rem;
+    }
+
     .footer-icon {
         font-size: 2.6em;
     }
@@ -437,6 +519,14 @@ body {
     
     .welcome-header {
         font-size: 300%;
+    }
+
+    .figure {
+        height: 500px;
+    }
+
+    .about-text-realestate {
+        margin-top: 2rem;
     }
 
     .footer-icon {
@@ -503,6 +593,34 @@ body {
 
     .welcome-header {
         font-size: 225%;
+    }
+
+    .greeting-bottom {
+        margin-bottom: 2rem;
+    }
+
+    .figure {
+        height: 600px;
+    }
+
+    .about-text-realestate {
+        padding: 1rem;
+        margin-top: .5rem;
+    }
+
+    .cc-container {
+        padding: 0rem;
+    }
+
+    .auto-row {
+        padding-top: 1rem;
+    }
+
+    .about-text {
+        padding: 0rem;
+        margin-top: 0rem;
+        margin-bottom: 1rem;
+        text-align: center;
     }
 
     .relay-banner {

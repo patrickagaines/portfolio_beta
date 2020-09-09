@@ -25,7 +25,7 @@ const RelayForJustice = () => {
                 </div>
                 <div className="row text-center relay-banner">
                     <div className="col-12 relay-banner-col">
-                        <img className="w-100" src={RelayLogo} alt="Relay For Justice Banner"/>
+                        <img className="w-100 rounded" src={RelayLogo} alt="Relay For Justice Banner"/>
                     </div>
                 </div>
                 <div className="row relay-section">
