@@ -3,7 +3,7 @@ import { MyContext } from '../context/MyContext.js';
 import { NavLink } from 'react-router-dom';
 import { ExternalLink } from 'react-external-link';
 import Footer from './Footer';
-import RelayBanner from '../images/Relayforjustice.png';
+import RFJbanner from '../images/RFJbanner.png';
 import RFJdesktop from '../images/RFJdesktop.png';
 import RFJmobile1 from '../images/RFJmobile1.png';
 import RFJmobile3 from '../images/RFJmobile3.png';
@@ -36,10 +36,10 @@ const RelayForJustice = () => {
                 </div>
                 <div className="row text-center relay-banner">
                     <div className="col-12 relay-banner-col">
-                        <img className="d-block w-100 rounded" src={RelayBanner} alt="Relay For Justice Banner"/>
+                        <img className="d-block w-100 rounded" src={RFJbanner} alt="Relay For Justice Banner"/>
                     </div>
                 </div>
-                <div className="row align-items-center">
+                <div className="row align-items-center relay-about">
                     <div className="col-12 col-md-4 large-phone-container">
                         <img className="d-block w-100" src={RFJmobile4} alt="Relay for Justice mobile screenshot" />
                     </div>
@@ -50,7 +50,8 @@ const RelayForJustice = () => {
                         <p>{textArea2}</p>
                     </div>
                 </div>
-                <div className="row align-items-center">
+                <hr className="relay-hr" />
+                <div className="row align-items-center relay-join">
                     <div className="col-12 col-md-4 text-left relay-text">
                         <h2>Join Us</h2>
                         <p>Visit our site at <ExternalLink className="rfj-link" href="https://relayforjustice.com/">Relayforjustice.com</ExternalLink>. Invite your friends and family to participate in our next relay!</p>
@@ -73,7 +74,7 @@ const RelayForJustice = () => {
                 <div className="row align-items-center text-left">
                     <div className="col-12 col-md-6 relay-testimonial-text">
                         <h2>Testimonial</h2>
-                        <p>Big thank you to Legal Aid for their positive feedback and support. Shout out to my fellow devolopers at Chi-IT who made this happen.</p>
+                        <p>A big thank you to Legal Aid for their positive feedback and support. Shout out to my fellow devolopers at Chi-IT who made this happen.</p>
                     </div>
                     <div className="col-12 col-md-6 relay-testimonial-container">
                         <img className="d-block w-100" src={RFJtestimonial} alt="Relat for Justice testimonial" />

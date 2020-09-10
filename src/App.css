@@ -153,7 +153,6 @@ body {
 /* About Me */
 .about-me {
     background-color: #12475f;
-    /* padding: 2rem; */
 }
 
 .about-greeting {
@@ -212,7 +211,7 @@ body {
 }
 
 #fixed {
-    background-image: url('./images/tintedchicagoshoreline.jpg');
+    background-image: url('./images/chicagoshoreline.jpg');
     position: fixed;
     display: block;
     margin: auto;
@@ -251,6 +250,10 @@ body {
     margin: .5em;
     background-color: #333;
 }
+
+/* .card-img-top {
+
+} */
 
 .card-button {
     color: white;
@@ -306,12 +309,27 @@ body {
     border: 5px solid #333;
 }
 
+.relay-about {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 .large-phone-container {
-    padding: 1.5rem 4rem 1.5rem 4rem;
+    padding: 1.5rem 3rem 1.5rem 3rem;
 }
 
 .relay-intro-text {
-    padding: 0rem 3rem;
+    padding: 0rem 4rem 0rem 0rem;
+}
+
+.relay-hr {
+    background-color: white;
+    width: 95%;
+    margin: auto;
+}
+
+.relay-join {
+    margin-top: 1.5rem;
 }
 
 .relay-text {
@@ -355,7 +373,7 @@ body {
 /* Message Dialog */
 .dialog-background {
     position: fixed;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     z-index: 1500;
     margin: 0;
@@ -680,12 +698,21 @@ body {
         width: 100%;
     }
 
+    .relay-about {
+        margin-top: 0rem;
+        margin-bottom: .5rem;
+    }
+
     .large-phone-container {
         padding: 1rem;
     }
 
     .relay-intro-text {
         padding: .5rem;
+    }
+
+    .relay-join {
+        margin-top: 1rem;
     }
 
     .relay-text {
@@ -705,10 +732,6 @@ body {
         margin-bottom: 1rem;
     }
 
-    .rfj-desktop {
-        border: 5px solid #333;
-    }
-
     .phone-row {
         padding: 0rem;
         margin-top: 0rem;
@@ -720,7 +743,8 @@ body {
 
     .relay-testimonial-text {
         padding: .5rem;
-        margin-top: 1rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
     }
 
     .relay-testimonial-text h2 {
@@ -732,7 +756,8 @@ body {
     }
     
     .relay-testimonial-container {
-        padding: .5rem;
+        padding: 0rem;
+        margin-bottom: 2rem;
     }
     
     .lead {

@@ -1,7 +1,7 @@
 import React from 'react';
 import placeholder from '../images/placeholder.png';
 import { NavLink } from 'react-router-dom';
-import RFJ from '../images/RFJcard.png';
+import LAlogo from '../images/legalaidlogo.png';
 
 const Showcase = () => {
 
@@ -10,7 +10,7 @@ const Showcase = () => {
             <div className="row">
                 <div className="col-md-4">
                     <div className="card">
-                        <img className="card-img-top" src={RFJ} alt="project 1"/>
+                        <img className="card-img-top" src={LAlogo} alt="Legal Aid Chicago Logo"/>
                         <div className="card-body">
                             <h4 className="card-title">Relay For Justice</h4>
                             <p className="card-text">Virtual walk, run, bike event hosted by Legal Aid Chicago</p>
