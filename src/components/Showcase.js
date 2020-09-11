@@ -1,14 +1,15 @@
 import React from 'react';
-import placeholder from '../images/placeholder.png';
 import { NavLink } from 'react-router-dom';
 import LAlogo from '../images/legalaidlogo.png';
+import RHcard from '../images/roadhousecard.png'
+
 
 const Showcase = () => {
 
     return(
         <div className="container-fluid showcase">
-            <div className="row">
-                <div className="col-md-4">
+            <div className="row justify-content-center">
+                <div className="col-md-5">
                     <div className="card">
                         <img className="card-img-top" src={LAlogo} alt="Legal Aid Chicago Logo"/>
                         <div className="card-body">
@@ -19,18 +20,18 @@ const Showcase = () => {
                     </div>
                 </div>
 
-                <div className="col-md-4">
+                <div className="col-md-5">
                     <div className="card">
-                        <img className="card-img-top" src={placeholder} alt="project 2"/>
+                        <img className="card-img-top" src={RHcard} alt="Route 41 Roudhouse"/>
                         <div className="card-body">
-                            <h4 className="card-title">Ecommerce App</h4>
-                            <p className="card-text">Description of my Ecommerce App.</p>
+                            <h4 className="card-title">Route 41 Roadhouse</h4>
+                            <p className="card-text">Southern Style Pit Barbeque Restaurant in Wadsworth, IL.</p>
                             <button className="card-button btn">See Profile</button>
                         </div>
                     </div>
                 </div>
 
-                <div className="col-md-4">
+                {/* <div className="col-md-4">
                     <div className="card">
                         <img className="card-img-top" src={placeholder} alt="project 3"/>
                         <div className="card-body">
@@ -39,7 +40,7 @@ const Showcase = () => {
                             <button className="card-button btn">See Profile</button>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     )

@@ -27,7 +27,8 @@ const About = () => {
                 <div className="row about-section align-items-center">
                     <div className="col-xsm-12 col-md-6 about-text">
                         <h2 className="about-greeting">Hi,</h2>
-                        <h2 className="about-greeting greeting-bottom">I'm Patrick.</h2>
+                        <h2 className="about-greeting">I'm Patrick.</h2>
+                        <hr className="about-hr" />
                         <h2>Web Development</h2>
                         <p>{technologyBody}</p>
                     </div>

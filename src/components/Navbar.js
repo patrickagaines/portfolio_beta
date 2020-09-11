@@ -3,7 +3,7 @@ import { MyContext } from '../context/MyContext.js';
 import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
-    const{ page } = useContext(MyContext);
+    const{ page, toggleContact } = useContext(MyContext);
 
     const homeStyle = {
         fontWeight: page.home ? "bold" : "normal"
@@ -16,6 +16,11 @@ const Navbar = () => {
     
     const projectsStyle = {
         fontWeight: page.projects ? "bold" : "normal",
+        color: "#333"
+    }
+
+    const contactStyle = {
+        margin: "0rem",
         color: "#333"
     }
 
@@ -36,6 +41,9 @@ const Navbar = () => {
                         </li>
                         <li className="nav-item">
                             <NavLink style={projectsStyle} to="/projects" className="nav-link">Projects</NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <p style={contactStyle} className="nav-link nav-contact" onClick={toggleContact}>Contact</p>
                         </li>
                     </ul>
                 </div>

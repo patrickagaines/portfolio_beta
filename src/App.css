@@ -26,6 +26,10 @@ body {
     to{transform: rotate(360deg);}
 }
 
+.nav-contact:hover {
+    cursor: pointer;
+}
+
 .dashboard {
     padding: 0;
     margin: auto;
@@ -159,8 +163,10 @@ body {
     font-size: 250%;
 }
 
-.greeting-bottom {
+.about-hr {
     margin-bottom: 4rem;
+    background-color: white;
+    width: 260px;
 }
 
 .about-section {
@@ -543,6 +549,23 @@ body {
 
 
 /*---Media Queries --*/
+
+/* Eliminate box-shadow at smaller screen sizes */
+@media (max-width: 1200px) {
+    .dashboard {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+    
+    .dashboard-body {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+}
+
+
 @media (max-width: 992px) {
     .carousel-caption {
         top: 76%
@@ -614,9 +637,11 @@ body {
     }
 }
 @media (max-width: 576px) {
+
     .fa-cog {
         font-size: 3em;
     }
+
     .carousel-caption {
         top: 70%;
     }
@@ -659,11 +684,20 @@ body {
     }
 
     .welcome-header {
-        font-size: 225%;
+        font-size: 200%;
     }
 
-    .greeting-bottom {
+    .about-greeting {
+        text-align: left;
+        margin-left: 1rem;
+        font-size: 225%;
+
+    }
+
+    .about-hr {
+        margin-left: 1rem;
         margin-bottom: 2rem;
+        width: 235px;
     }
 
     .figure {

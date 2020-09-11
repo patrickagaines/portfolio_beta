@@ -11,7 +11,7 @@ const ImageSlider = () => {
 
     return(
         <div className="container-fluid image-slider">
-            <Carousel interval={3000} pause='false'>
+            <Carousel interval={3000} pause={false}>
                 <Carousel.Item>
                     <img className="d-block w-100" src={Portrait} alt="Developer Logo" />
                     <Carousel.Caption className="carousel-caption">
