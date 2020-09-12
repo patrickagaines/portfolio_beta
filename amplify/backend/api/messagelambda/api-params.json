@@ -1,0 +1,34 @@
+{
+    "paths": [
+        {
+            "name": "/message",
+            "lambdaFunction": "messagelambda",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "messagelambda",
+    "apiName": "messagelambda",
+    "functionArns": [
+        {
+            "lambdaFunction": "messagelambda"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-portfolio-dev-181437-authRole",
+        "unAuthRoleName": "amplify-portfolio-dev-181437-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "messagelambda",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

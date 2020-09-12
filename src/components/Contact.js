@@ -1,7 +1,9 @@
 import React, { useContext, useState } from 'react';
 import { MyContext } from '../context/MyContext';
+import { API } from 'aws-amplify';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import Alert from 'react-bootstrap/Alert';
 import { Col, Row } from 'react-bootstrap';
 
 const Contact = () => {
@@ -10,24 +12,40 @@ const Contact = () => {
     const[name, setName] = useState("");
     const[email, setEmail] = useState("");
     const[message, setMessage] = useState("");
+    const[loading, setLoading] = useState(false);
 
     const handleName = e => setName(e.target.value);
     const handleEmail = e => setEmail(e.target.value);
     const handleMessage = e => setMessage(e.target.value);
 
-    const sendMessage = (e) => {
+    const handleSendMessage = async (e) => {
         e.preventDefault();
-        console.log(name, email, message);
-        toggleContact();
-        setName("");
-        setEmail("");
-        setMessage("");
+        setLoading(true);
+        try{
+            const result = await API.post('messagelambda', '/message', {
+                body: {
+                    name,
+                    message,
+                    email
+                }
+            })
+            console.log({result});
+            if (result.message === "Success") {
+                setName("");
+                setEmail("");
+                setMessage("");
+                toggleContact();
+                // <Alert variant="success" />
+            }
+        } catch(err) {
+            console.error(err);
+        }
     }
 
     return(
         <div className="dialog-background row align-items-center justify-content-center">
             <div className="col-xs-10 col-sm-10 col-md-8 col-lg-6">
-                <Form className="dialog-box rounded text-left" onSubmit={sendMessage}>
+                <Form className="dialog-box rounded text-left" onSubmit={handleSendMessage}>
                     <Form.Group controlId="name">
                         <Form.Label>Name</Form.Label>
                         <Form.Control required type="text" value={name} onChange={handleName} />
@@ -40,6 +58,15 @@ const Contact = () => {
                         <Form.Label>Message</Form.Label>
                         <Form.Control required as="textarea" rows="3" value={message} onChange={handleMessage} />
                     </Form.Group>
+                    <Row>
+                        <Col>
+                            { loading &&
+                            <div style={{ margin: "auto" }} className="spinner-border d-block" role="status">
+                                <span className="sr-only">Loading...</span>
+                            </div>
+                            }
+                        </Col>
+                    </Row>
                     <Row className="text-right">
                         <Col>
                             <Button onClick={toggleContact} className="dialog-button-cancel">
