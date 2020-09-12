@@ -3,7 +3,6 @@ import { MyContext } from '../context/MyContext';
 import { API } from 'aws-amplify';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import Alert from 'react-bootstrap/Alert';
 import { Col, Row } from 'react-bootstrap';
 
 const Contact = () => {
@@ -72,7 +71,7 @@ const Contact = () => {
                             <Button onClick={toggleContact} className="dialog-button-cancel">
                                 Cancel
                             </Button>
-                            <Button className="dialog-button-submit" type="submit">
+                            <Button className="dialog-button-submit btn-secondary" type="submit">
                                 Submit
                             </Button>
                         </Col>
