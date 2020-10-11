@@ -5,8 +5,7 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { Col, Row } from 'react-bootstrap';
 
-const Contact = () => {
-
+const Contact = ({ notify }) => {
     const { toggleContact } = useContext(MyContext);
     const[name, setName] = useState("");
     const[email, setEmail] = useState("");
@@ -33,8 +32,8 @@ const Contact = () => {
                 setName("");
                 setEmail("");
                 setMessage("");
+                notify();
                 toggleContact();
-                // <Alert variant="success" />
             }
         } catch(err) {
             console.error(err);

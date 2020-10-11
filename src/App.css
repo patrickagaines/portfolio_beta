@@ -30,6 +30,13 @@ body {
     cursor: pointer;
 }
 
+
+/* Toast */
+.Toastify__toast--info {
+    background-color: #333;
+}
+
+
 .dashboard {
     padding: 0;
     margin: auto;
@@ -93,6 +100,11 @@ body {
     padding: 1rem;
     border-radius: 0;
     background-color: #333;
+}
+
+.jumbotron-text {
+    font-size: 125%;
+    margin: 1rem 0rem;
 }
 
 .jumbotron .btn {
@@ -602,8 +614,8 @@ body {
         font-size: 350%;
     }
 
-    .btn {
-        font-size: 95%;
+    .jumbotron-text {
+        margin: 0rem 0rem .5rem 0rem;
     }
     
     .welcome-header {
@@ -648,10 +660,6 @@ body {
     .carousel-caption h1 {
         font-size: 225%;
     }
-
-    .btn {
-        font-size: 90%;
-    }
     
     .carousel-caption h3 {
         font-size: 110%;
@@ -672,6 +680,10 @@ body {
 
     .carousel-control-next {
         display: none;
+    }
+
+    .jumbotron-text {
+        font-size: 100%;
     }
 
     .jumbotron .btn {
