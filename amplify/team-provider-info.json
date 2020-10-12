@@ -10,6 +10,11 @@
             "StackName": "amplify-portfolio-dev-181437",
             "StackId": "arn:aws:cloudformation:us-east-2:618545000329:stack/amplify-portfolio-dev-181437/9153a560-f484-11ea-b199-0247ef85be9c",
             "AmplifyAppId": "d1dkjq1hw9mnvj"
+        },
+        "categories": {
+            "function": {
+                "messagelambda": {}
+            }
         }
     },
     "prod": {

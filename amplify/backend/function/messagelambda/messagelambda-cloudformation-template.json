@@ -68,7 +68,7 @@
 				"Layers": [],
 				"Timeout": "25",
 				"Code": {
-					"S3Bucket": "amplify-portfolio-dev-181437-deployment",
+					"S3Bucket": "amplify-portfolio-prod-132053-deployment",
 					"S3Key": "amplify-builds/messagelambda-5343556b672b76434174-build.zip"
 				}
 			}
